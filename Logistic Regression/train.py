@@ -30,9 +30,13 @@ for epoch in range(5):
     # data and label are NDArray
     for data, label in train_data:
         with autograd.record():
+            # forward
             output = net(data)
+            # calculate loss
             loss = softmax_cross_entropy(output, label)
+        # backword
         loss.backward()
+        # Make one step of parameter update. The parameter batch_size means gradient will be normalized by 1/batch_size
         trainer.step(batch_size)
 
         # get mean loss and return a scalar whose value is copied from this array
