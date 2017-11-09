@@ -5,7 +5,7 @@
 
 `git clone https://github.com/miraclewkf/Gluon-example.git`
 
-* choose the file you are intreast and run
+* choose one file and run the script `train.py` int that file
 
 `python train.py`
 
