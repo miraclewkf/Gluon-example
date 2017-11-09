@@ -17,8 +17,7 @@
 
 * Logistic Regression
 
-**Notice:** How to use `mxnet.gluon.nn.Sequential()` to add layers.
-[More details](http://zh.gluon.ai/chapter_supervised-learning/softmax-regression-gluon.html)
+	* **Notice:** How to use `mxnet.gluon.nn.Sequential()` to add layers. [More details](http://zh.gluon.ai/chapter_supervised-learning/softmax-regression-gluon.html)
 
 * LeNet [More details](http://zh.gluon.ai/chapter_convolutional-neural-networks/cnn-gluon.html)
 
@@ -32,7 +31,7 @@
 
 * GoogLeNet
 
-**Notice:** How to define a new class from `mxnet.gluon.nn.Block`. [More details](http://zh.gluon.ai/chapter_convolutional-neural-networks/googlenet-gluon.html)
+	* **Notice:** How to define a new class from `mxnet.gluon.nn.Block`. [More details](http://zh.gluon.ai/chapter_convolutional-neural-networks/googlenet-gluon.html)
 
 * ResNet [More details](http://zh.gluon.ai/chapter_convolutional-neural-networks/resnet-gluon.html)
 
