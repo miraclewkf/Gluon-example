@@ -69,8 +69,7 @@ class ResNet(nn.Block):
             # block 6
             b6 = nn.Sequential()
             b6.add(
-                nn.AvgPool2D(pool_size=7),
-                nn.Flatten(),
+                nn.AvgPool2D(pool_size=3),
                 nn.Dense(num_classes)
             )
             # chain all blocks together
@@ -86,7 +85,7 @@ class ResNet(nn.Block):
         return out
 
 train_data, test_data = utils.load_data_fashion_mnist(
-    batch_size=64, resize=224)
+    batch_size=64, resize=96)
 
 ctx = utils.try_gpu()
 net = ResNet(num_classes = 10)
